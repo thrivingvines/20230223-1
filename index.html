@@ -38,11 +38,11 @@
 <script>
 let message = "hello";
 
-let x = "新垣結衣";
-let y = "NewJeans";
+let x = "新垣結衣<img src='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lespros-1601090488.jpg?crop=1xw:1xh;center,top&resize=480:*' width='50' height='50'>";
+let y = "NewJeans<img src='https://cdn.bella.tw/files-20230214/294622703_456218703019665_2467082314279752133_n.jpg' width='50' height='50'> ";
 
-document.querySelector("#result1").innerText = x;
-document.querySelector("#result2").innerText = y;
+document.querySelector("#result1").innerHTML = x;
+document.querySelector("#result2").innerHTML = y;
 
 function show() {
 	let result_x = document.querySelector("#x").value;
