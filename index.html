@@ -27,6 +27,7 @@
  	background-color: red;
  	color: white;
  }
+
 </style>
 
 <div id='result1'>
@@ -61,6 +62,12 @@ function show() {
 	let result_y = document.querySelector("#y").value;
 	document.querySelector("#result1").style.width = result_x + "px";
 	document.querySelector("#result2").style.width = result_y + "px";
+}
+
+function cancel() {
+	document.querySelector("#result1").style.width = "100px";
+	document.querySelector("#result2").style.width = "100px";
+
 }
 
 //這是註解
