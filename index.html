@@ -16,6 +16,17 @@
  	font-weight: bold;
  	font-size: 20px;
  }
+
+ button {
+ 	width: 300px;
+ 	height: 300px;
+ 	font-size: 30px;
+ }
+
+ #cancel {
+ 	background-color: red;
+ 	color: white;
+ }
 </style>
 
 <div id='result1'>
@@ -32,6 +43,7 @@
 	<input type="number" name="y" id="y">
 	<br>
 	<button id="btn" onclick="show()">顯示最後投票結果</button>
+	<button id="cancel" onclick="cancel()">回復原始狀態</button>
 </div>
 
 <!--  這是 HTML註解 -->
