@@ -31,10 +31,10 @@
 	<label for="y">NewJeans</label>
 	<input type="number" name="y" id="y">
 	<br>
-	<button id="btn">顯示最後投票結果</button>
+	<button id="btn" onclick="show()">顯示最後投票結果</button>
 </div>
 
-<!--   這是 HTML註解 -->
+<!--  這是 HTML註解 -->
 <script>
 let message = "hello";
 
@@ -44,6 +44,12 @@ let y = "NewJeans";
 document.querySelector("#result1").innerText = x;
 document.querySelector("#result2").innerText = y;
 
+function show() {
+	let result_x = document.querySelector("#x").value;
+	let result_y = document.querySelector("#y").value;
+	document.querySelector("#result1").style.width = result_x + "px";
+	document.querySelector("#result2").style.width = result_y + "px";
+}
 
 //這是註解
 /*
