@@ -1,79 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  div {
+  	background-color: #d9f0c9;
+  }
 
-<style>
+  h1 {
+    color: white;
+    text-align: center;
+  }
 
-.result{
-	width: 100px;
- 	height: 100px;
- 	color: green;
- 	font-weight: bold;
- 	font-size: 20px;
-}
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  
+  #chain_saw_man {
+  	background-color:rgba(0, 255, 0, 0.5);
+  }
+  
+  #fallen_devil {
+  	background-color:rgba(0, 255, 0, 0.3);
+  }
+  </style>
+</head>
+<body>
+	<div id="chain_saw_man">鏈鋸人</div>
+	<div id="fallen_devil">墜落惡魔</div>
 
- #result1 {
- 	background-color: red;
- 
- }
- #result2 {
- 	background-color: blue;
- }
+<h1>My First CSS Example</h1>
+<p>This is a paragraph.</p>
 
- button {
- 	width: 300px;
- 	height: 300px;
- 	font-size: 30px;
- }
-
- #cancel {
- 	background-color: rgba(0,255,0,0.5);
- 	color: white;
- }
-
-</style>
-
-<div id='result1' class="result">
-</div>
-
-<div id='result2' class="result">
-</div>
-
-<div>
-	<label for="x">新垣結衣</label>
-	<input type="number" name="x" id="x">
-	<br>
-	<label for="y">NewJeans</label>
-	<input type="number" name="y" id="y">
-	<br>
-	<button id="btn" onclick="show()">顯示最後投票結果</button>
-	<button id="cancel" onclick="cancel()">回復原始狀態</button>
-</div>
-
-<!--  這是 HTML註解 -->
-<script>
-let message = "hello";
-
-let x = "新垣結衣<img src='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/lespros-1601090488.jpg?crop=1xw:1xh;center,top&resize=480:*' width='50' height='50'>";
-let y = "NewJeans<img src='https://cdn.bella.tw/files-20230214/294622703_456218703019665_2467082314279752133_n.jpg' width='50' height='50'> ";
-
-document.querySelector("#result1").innerHTML = x;
-document.querySelector("#result2").innerHTML = y;
-
-function show() {
-	let result_x = document.querySelector("#x").value;
-	let result_y = document.querySelector("#y").value;
-	document.querySelector("#result1").style.width = result_x + "px";
-	document.querySelector("#result2").style.width = result_y + "px";
-}
-
-function cancel() {
-	document.querySelector("#result1").style.width = "100px";
-	document.querySelector("#result2").style.width = "100px";
-}
-
-//這是註解
-/*
-	跨行註解
-*/
+</body>
+</html>
 
 
-
-</script>
