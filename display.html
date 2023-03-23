@@ -19,6 +19,10 @@
 			<img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/NewJeans_theMEGASTUDY.jpg" width="200" height="200">
 		</div>
 
+		<button class="newjeans">
+			<img src="https://cdn2.ettoday.net/images/6914/d6914962.jpg" width="100" height="100">
+		</button>
+
 	<script type="text/javascript">
 		function hide() {
 			document.querySelector(".news_title").style.display="none";
@@ -29,11 +33,18 @@
 		}
 
 		function hideNewJeans() {
-			document.querySelector(".newjeans").style.display="none";
+
+			let elements = document.querySelectorAll(".newjeans");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "none";
+			}
 		}
 
 		function showNewJeans() {
-			document.querySelector(".newjeans").style.display="block";
+			let elements = document.querySelectorAll(".newjeans");
+			for(let i = 0; i < elements.length; i=i+1) {
+				elements[i].style.display = "block";
+			}
 		}
 	</script>
 	</body>
